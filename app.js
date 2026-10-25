@@ -15,7 +15,7 @@ const read = (key, fallback) => {
 };
 const write = (key, value) => S.setItem(key, JSON.stringify(value));
 
-const DEFAULT_MODEL = "gemini-3.8-flash";
+const DEFAULT_MODEL = "gemini-flash-lite-latest";
 const apiKey = () => S.getItem("apiKey") ?? "";
 const model = () => S.getItem("model") ?? DEFAULT_MODEL;
 
